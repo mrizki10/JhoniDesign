@@ -1,0 +1,309 @@
+/* Navbar */
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-family: Viga;
+  font-size: 32px;
+}
+
+/* Utility */
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(img/8.jpg);
+  background-size: cover;
+  height: 540px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0)
+  );
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-4 {
+  margin-top: 150px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(246, 242, 242, 0.7);
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.jumbotron h1 {
+  margin-top: 50px !important;
+}
+
+.jumbotron .display-4 span {
+  font-weight: 500;
+}
+
+.about img {
+  width: 200px;
+  height: 300px;
+  margin-left: auto;
+  position: relative;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.propil p {
+  text-align: left;
+}
+
+/* info panel */
+.info-panel {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: -100px;
+  background-color: white;
+  padding: 30px;
+}
+
+.kontak {
+  margin-top: -410px;
+  height: 350px;
+  background-color: #c0c0c0;
+}
+
+.info-panel img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.info-panel p {
+  font-size: 14px;
+  color: #acacac;
+  margin-top: -5px;
+  font-weight: 200;
+}
+/* Working space */
+.workingspace {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.workingspace h2 {
+  font-size: 52px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.workingspace h2 span {
+  font-weight: 500;
+}
+
+.workingspace p {
+  font-size: 18px;
+  color: #acacac;
+  font-weight: 200;
+  margin: 30px 0;
+}
+
+/* testimonial */
+.testimonial {
+  margin-top: 100px;
+}
+
+.testimonial h5 {
+  text-align: center;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 24px;
+}
+
+.testimonial figure p {
+  font-size: 12px;
+  color: #acacac;
+  margin-top: -5px;
+}
+
+.testimonial figcaption {
+  text-align: center;
+}
+
+.testimonial figure img {
+  width: 60px;
+  margin: 20px 10px 10px;
+  opacity: 0.6;
+}
+
+.testimonial figure img.utama {
+  width: 90px;
+  opacity: 1;
+  margin-top: 5px;
+}
+
+.testimonial figure h6 {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  color: #1c2c5d;
+}
+
+/* Footer */
+.footer {
+  margin-top: 100px;
+}
+.footer p {
+  color: #acacac;
+  font-size: 18px;
+}
+
+/* Layanan */
+
+.card {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.layanan h1 {
+  margin-top: 200px !important;
+}
+
+.card-text {
+  color: #acacac;
+}
+
+.about {
+  background-image: url(img/money-2180330_640.jpg);
+  background-size: cover;
+  height: 600px;
+}
+.propil {
+  margin-left: auto;
+  background-color: #acacac;
+  border-radius: 10%;
+}
+
+.card-title {
+  font-size: 30px;
+  font-style: oblique;
+}
+
+.kontak h4 {
+  text-transform: lowercase !important;
+}
+
+.kontak h5,
+h4 {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Galleri */
+
+.galery {
+  margin-top: 50px;
+}
+
+.galery .card {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.galery .card img {
+  width: auto;
+  height: 310px;
+}
+
+/* Desktop Version */
+@media (min-width: 992px) {
+  .navbar-brand {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    margin-top: -75px;
+    height: 640px;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 62px;
+  }
+
+  .workingspace {
+    text-align: left;
+  }
+
+  .testimonial h5 {
+    font-size: 32px;
+  }
+
+  .kontak {
+    margin-top: -300px;
+    height: 160px;
+  }
+
+  .jumbotron .kontak1 {
+    margin-top: 150px;
+  }
+
+  .about img {
+    width: 400px;
+    height: 500px;
+    margin-top: 50px;
+    position: relative;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+  }
+  .propil {
+    margin-top: 40px;
+    margin-left: auto;
+    background-color: #acacac;
+    border-radius: 10%;
+  }
+
+  .propil h3 {
+    margin-top: 10px;
+  }
+}
