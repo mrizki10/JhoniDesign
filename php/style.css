@@ -1,0 +1,35 @@
+.nav-wrapper img{
+    max-width: 150px;
+    height: 25px;
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.8));
+}
+
+hr{
+    width: 250px;
+}
+
+.bungkus form button{
+    width: 300px;
+}
+
+form button{
+    width: 150px;
+}
+
+th{
+    text-align: center;
+}
+.bungkus .card{
+    padding: 10px;
+
+    
+}
+.bungkus .container{
+    height: 50%;
+    width: 30%;
+}
+
+section, footer {
+    padding: 20px 0;
+}
+
